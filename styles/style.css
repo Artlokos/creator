@@ -3,8 +3,6 @@
   flex-direction: column;
   flex-wrap: nowrap;
   width: clamp(375px, 99%, 700px);
-  min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
   background-color: var(--background-color);
   background-image: repeating-linear-gradient(
       90deg,
@@ -20,7 +18,7 @@
       var(--gradient-color__lighting) 0.01%,
       var(--gradient-color__darking) 100%
     );
-  color: var(--accent-color);
+  color: rgb(0 0 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -152,7 +150,7 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap:50px;
+  gap: 50px;
   max-inline-size: 100%;
 }
 
@@ -160,10 +158,10 @@
   background-color: var(--background-color);
   font-family: var(--main-font);
   border: 2px solid var(--accent-color);
+  height: clamp(375px, 99%, 700px);
 }
 
-.card {
-}
+/* .card {border: none;} */
 
 .card-img{
   display: block;
@@ -176,17 +174,15 @@
   margin-bottom: 40px;
 }
 
-.img-container img {
-  outline: 2px solid var(--accent-color);
-  object-fit: cover;
-  object-position: center;
-}
-
 .card-title {
   padding: 6px 12px;
   font-size: 18px;
   font-variation-settings: "wght" var(--font-weight-header), "wdth" 100,
     "opsz" 0;
+  font-family: var(--accent-font), sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .card-content {
