@@ -163,18 +163,12 @@
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-content: flex-start;
-  max-inline-size:100%;
 }
 
 .card-img{
   display: block;
-  width: 696px;
-  height: 696px;
-  color:rgba(12, 223, 40, 0.945);
+  height: clamp(375px,100%,1200px);
+  width: clamp(375px,100%,1200px);
 }
 
 
